@@ -5,7 +5,8 @@ Save Configuration and STL of https://www.heroforge.com/
 <br/>Go to https://www.heroforge.com/
 <br/>Open the Javascript Console [F12], then click on Console
 <br/>Paste the following
-<br/>`var xhr=new XMLHttpRequest;xhr.open("get","https://gitlab.com/RajGL/herosaverextractor/raw/master/herosaver.min.js",true);xhr.onr`
+var xhr=new XMLHttpRequest;xhr.open("get","https://raw.githubusercontent.com/RajKaul86/HeroExtractorSTL/master/herosaver.min.js",true);xhr.onreadystatechange=function(){if(xhr.readyState==4){var script=document.createElement("script");script.type="text/javascript";script.text=xhr.responseText;document.body.appendChild(script)}};xhr.send(null);
+
 
 
 
